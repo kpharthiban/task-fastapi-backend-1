@@ -32,10 +32,12 @@ async def post_one_task(item: DBItemBase, db: db_dependency):
     return db_task
 
 # GET Route - for one task
-@app.get("/tasks/{task_id}", response_model=DBItem)
+@app.get("/tasks/{task_id}/", response_model=DBItem)
 async def get_tasks(db: db_dependency, task_id: int):
-    task = db.query(DBItemsTable).all(id=task_id)
+    task = db.query(DBItemsTable).get(task_id)
     return task
+
+
 
 
 # To run with "python main.py" command
