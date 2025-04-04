@@ -18,7 +18,7 @@ tables.Base.metadata.create_all(bind=engine)
 
 # Adding origins that can access this backend
 origins = [
-    "http://localhost:5173"
+    "https://test-react-frontend-liard.vercel.app" # Change this with http://localhost:5173 - for local testing
 ]
 
 # Adding middleware that enables communication between backend and frontend
