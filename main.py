@@ -81,4 +81,4 @@ async def delete_task(db: db_dependency, task_id: int):
 # Preferred to run with "fastapi dev main.py" -- requires "fastapi[standard]" module
 if __name__ == ("__main__"):
     import uvicorn
-    uvicorn.run(app, host="localhost", port="8000")
+    uvicorn.run(app, host="0.0.0.0", port="8000")
