@@ -22,7 +22,7 @@ origins = [
 ]
 
 # Adding middleware that enables communication between backend and frontend
-app.add_middleware(CORSMiddleware, allow_origins=origins, allow_origins=True, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 # Routes
 # GET Route - for all tasks
