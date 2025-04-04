@@ -16,3 +16,8 @@ venv\Scripts\activate.bat
 ```
 pip install -r requirements.txt
 ```
+## Running Frontend Server
+1. Run the command below and navigate to the link visible in terminal.
+```
+fastapi dev main.py
+```
